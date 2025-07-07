@@ -1,6 +1,36 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
+import { useToast } from "@/hooks/use-toast";
 
 export default function Home() {
+  const { toast } = useToast();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!name || !email) {
+      toast({
+        title: "Campos Requeridos",
+        description: "Por favor, completa tu nombre y correo electrónico.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    toast({
+      title: '¡Gracias por tu mensaje!',
+      description: 'Te contactaremos pronto.',
+    });
+
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
+
   return (
     <main className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       <section
@@ -228,7 +258,7 @@ export default function Home() {
             Agenda una sesión introductoria gratuita y descubre cómo ZenFlow
             puede transformar tu visión.
           </p>
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
                 <label className="sr-only" htmlFor="name">
@@ -239,6 +269,8 @@ export default function Home() {
                   id="name"
                   placeholder="Tu Nombre"
                   type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div>
@@ -250,6 +282,8 @@ export default function Home() {
                   id="email"
                   placeholder="Tu Correo Electrónico"
                   type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
             </div>
@@ -262,6 +296,8 @@ export default function Home() {
                 id="message"
                 placeholder="Tu Mensaje"
                 rows={4}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
             <button

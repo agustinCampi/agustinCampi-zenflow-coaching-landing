@@ -2,10 +2,11 @@ import type {Metadata} from 'next';
 import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: 'ZenFlow Coaching',
-  description: 'Unlock Your Creative and Entrepreneurial Potential',
+  description: 'Desbloquea Tu Potencial Creativo y Emprendedor',
 };
 
 export default function RootLayout({
@@ -14,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
@@ -33,6 +34,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </div>
+        <Toaster />
       </body>
     </html>
   );
