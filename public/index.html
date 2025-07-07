@@ -1,59 +1,247 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Site Spark</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Static Site Spark</h1>
-            <nav>
-                <a href="#features">Features</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+<html lang="en">
 
-        <main id="content">
-            <section id="hero">
-                <h2>Welcome to Your New Static Site</h2>
-                <p>Simple, elegant, and blazing fast. Ready for you to customize.</p>
-                <a href="#features" class="cta-button">Learn More</a>
-            </section>
-            
-            <section id="features">
-                <h3 class="section-title">Core Features</h3>
-                <div class="feature-grid">
-                    <div class="feature-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect><rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect><line x1="6" x2="6.01" y1="6" y2="6"></line><line x1="6" x2="6.01" y1="18" y2="18"></line></svg>
-                        <h4>Static File Hosting</h4>
-                        <p>Serving HTML, CSS, and JS files directly from the `/public` directory for maximum performance.</p>
-                    </div>
-                    <div class="feature-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                        <h4>Clean HTML Structure</h4>
-                        <p>A clean, semantic HTML5 structure as the foundation of your landing page.</p>
-                    </div>
-                    <div class="feature-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
-                        <h4>Ready for Content</h4>
-                        <p>A placeholder main section to showcase your core content effectively and beautifully.</p>
-                    </div>
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <title>ZenFlow Coaching</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+        --mint-green: #e0f2f1;
+        --pale-sky-blue: #cce7ff;
+        --warm-gray: #f5f5f5;
+        --text-primary: #1a202c;
+        --text-secondary: #4a5568;
+      }
+    </style>
+</head>
+
+<body class="bg-white">
+    <div class="relative flex size-full min-h-screen flex-col" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+        <div class="flex-grow">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-6 md:px-10 py-4">
+                <div class="flex items-center gap-3 text-text-primary">
+                    <svg class="h-8 w-8 text-[#47eab4]" fill="none" viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"
+                            fill="currentColor"></path>
+                        <path clip-rule="evenodd"
+                            d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z"
+                            fill="currentColor" fill-rule="evenodd"></path>
+                    </svg>
+                    <h2 class="text-xl font-bold tracking-tight">ZenFlow Coaching</h2>
                 </div>
-            </section>
-        </main>
-        
-        <footer>
-            <p>&copy; 2024 Static Site Spark. All Rights Reserved.</p>
-        </footer>
+                <button
+                    class="hidden md:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[#47eab4] text-text-primary text-sm font-bold shadow-sm hover:bg-opacity-90 transition-colors">
+                    <span class="truncate">Schedule Your Free Session</span>
+                </button>
+            </header>
+            <main class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+                <section
+                    class="relative flex min-h-[500px] flex-col items-center justify-center rounded-2xl bg-cover bg-center bg-no-repeat p-6 text-center shadow-lg"
+                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAYZS-7mnqJuPdBPzLWOsQrO9WCmyili3fF_qon5OEomHQpd0pglUfPZ3lAJlkXmJ9-HLiYrwzoJDUKUzlKXk5SBFRhRktvDun2ydHkNQWwrGgO85jUibfFrSn5mzHAMRjhm3Uza6QIRcmZ_51ylYIa0trHuIIVtXCpq5PuEDtp16NIwh-M3wwmuU97dTxDSAgBL6rYxbYyR89qodlwPsW3kUzzVPS8EM13HhqwdTi7jVnwD4Nj9yLgaGCKframRLTE-oZh7gYhdbI");'>
+                    <div class="flex flex-col gap-4 max-w-3xl">
+                        <h1 class="text-white text-4xl md:text-6xl font-extrabold leading-tight tracking-tighter">Unlock
+                            Your Creative and Entrepreneurial Potential</h1>
+                        <p class="text-white text-lg md:text-xl font-light">Find the clarity, focus, and motivation to
+                            turn your brilliant ideas into successful projects.</p>
+                    </div>
+                    <button
+                        class="mt-8 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[#47eab4] text-text-primary text-base font-bold shadow-md hover:bg-opacity-90 transition-colors">
+                        <span class="truncate">Start Your Transformation Now</span>
+                    </button>
+                </section>
+                <section class="grid md:grid-cols-2 gap-16 items-center py-20">
+                    <div>
+                        <h2 class="text-3xl font-bold tracking-tight text-text-primary mb-4">Your Guide to Creative
+                            Mastery</h2>
+                        <p class="text-text-secondary text-lg leading-relaxed">
+                            At ZenFlow Coaching, we understand the unique challenges of entrepreneurs and creatives. We
+                            offer personalized tools and strategies to overcome blocks, optimize your
+                            workflow, and cultivate an unstoppable mindset. My mission is to help you channel your
+                            creative energy into tangible and sustainable results.
+                        </p>
+                    </div>
+                    <div class="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg">
+                        <div class="h-full w-full bg-cover bg-center"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpdDatpYGsWgNkPgC4iNkgQnxz9cHoHSqMFn1RFDrarr5ImXh1jz3W5sp3UyqQeuUd0w1mojnBiwsHpJr5B7RK5qYy7Nt_GbTXrudRn3bKxxl2iWwpkzk_p6gQN4DkjP5VmP9aHCyyMQKggAD178fnM4qOmMRN-cBoCcAUTAuUvI9g_qR7QRy_6g1LEGEVfYzG27AhrJ4YkxSTHUWsP_azFOtgMkaDhcw1IGob1WiinOrJuS1wh_VtYDhLgRsI2Gs-GqHkuEVaAA0");'>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-20 bg-[var(--mint-green)] -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-6xl mx-auto">
+                        <h2 class="text-3xl font-bold tracking-tight text-text-primary text-center mb-12">Services
+                            Designed to Boost Your Project</h2>
+                        <div class="grid md:grid-cols-3 gap-8 text-center">
+                            <div class="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center">
+                                <div class="bg-[#47eab4] p-3 rounded-full mb-4">
+                                    <svg fill="#1a202c" height="32px" viewBox="0 0 256 256" width="32px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M221.87,83.16A104.1,104.1,0,1,1,195.67,49l22.67-22.68a8,8,0,0,1,11.32,11.32l-96,96a8,8,0,0,1-11.32-11.32l27.72-27.72a40,40,0,1,0,17.87,31.09,8,8,0,1,1,16-.9,56,56,0,1,1-22.38-41.65L184.3,60.39a87.88,87.88,0,1,0,23.13,29.67,8,8,0,0,1,14.44-6.9Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-text-primary mb-2">Strategic Clarity</h3>
+                                <p class="text-text-secondary">Individual sessions to define your goals, identify
+                                    obstacles, and outline a clear and concise action plan.</p>
+                            </div>
+                            <div class="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center">
+                                <div class="bg-[#47eab4] p-3 rounded-full mb-4">
+                                    <svg fill="#1a202c" height="32px" viewBox="0 0 256 256" width="32px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-text-primary mb-2">Creative Productivity</h3>
+                                <p class="text-text-secondary">Learn techniques to manage your time, avoid distractions,
+                                    and maintain a constant flow of inspiration and execution.</p>
+                            </div>
+                            <div class="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center">
+                                <div class="bg-[#47eab4] p-3 rounded-full mb-4">
+                                    <svg fill="#1a202c" height="32px" viewBox="0 0 256 256" width="32px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-text-primary mb-2">Unstoppable Mindset</h3>
+                                <p class="text-text-secondary">Develop resilience, overcome the fear of failure, and
+                                    cultivate solid self-confidence to face any challenge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-20">
+                    <h2 class="text-3xl font-bold tracking-tight text-text-primary text-center mb-12">What Our Clients
+                        Have Achieved</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-cover bg-center flex flex-col justify-end rounded-2xl p-8 min-h-[400px] shadow-lg"
+                            style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBoSoBOUl0hEnkx0qq0YTy1lJD0YLdrld_3DvyuNLmXgQ-To-W5CBOknANe-xhEsSogqJ7L-teUtUU3S89cN_C39Z0gULK_Ovf9JMKPif3Fsv3-bRSmEpZ6xz-d_67hLBeftQzLcYa_RcyPvwYCqdRobxB7s-BuSzrgSPvWeJPab8eZFJpZvxj29v-bKMmZiAGYgNBm5K27Ac1TZobSS2cXNggjfiHgIAHnCRULIb_Vo9fi32ygu_lUS5MJceh4ccbpZXGXtv-5YXw");'>
+                            <blockquote class="text-white">
+                                <p class="text-2xl font-bold mb-2">"Thanks to ZenFlow, I finally launched my podcast.
+                                    Their focus on creative productivity changed the way I work."</p>
+                                <footer class="text-base font-medium opacity-90">Laura P., Graphic Designer</footer>
+                            </blockquote>
+                        </div>
+                        <div class="bg-cover bg-center flex flex-col justify-end rounded-2xl p-8 min-h-[400px] shadow-lg"
+                            style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDakQjm6WqnDo03LMlKzFbwlft05QMYuw9TNT44IvVAOz44UWfNE222PxrcunhKazbV7OOJHLGqCHJJZZSv6FjbK-xf5xOEteQsoHSCLD-vcMlnvSXIJ4PcgcT9HZFwgwUoG6quy2Aa2uxUFPeeWCDcMlqeZiIjlL1ef3NTYprEA6f6svHmK-Vk9nEcXMP3UBoVH1fZ6cC63kiDj5LNNKp1ElZ2XU-b2JstJWufsU7YZXp3oERC2UkRMv4Gnz447-OJwufLYNldu-o");'>
+                            <blockquote class="text-white">
+                                <p class="text-2xl font-bold mb-2">"I overcame my writer's block and now have a constant
+                                    flow of ideas. Highly recommended for any creative!"</p>
+                                <footer class="text-base font-medium opacity-90">Martín S., Writer and Entrepreneur
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-20 bg-[var(--pale-sky-blue)] -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto">
+                        <h2 class="text-3xl font-bold tracking-tight text-text-primary text-center mb-12">Frequently
+                            Asked Questions</h2>
+                        <div class="space-y-4">
+                            <details class="bg-white p-6 rounded-2xl shadow-sm group" open="">
+                                <summary
+                                    class="flex cursor-pointer items-center justify-between text-lg font-medium text-text-primary">
+                                    How does a coaching session work?
+                                    <svg class="w-6 h-6 transform transition-transform group-open:rotate-180"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"></path>
+                                    </svg>
+                                </summary>
+                                <p class="mt-4 text-text-secondary">Our sessions are virtual, lasting 60 minutes. They
+                                    focus on your specific goals and creating actionable strategies.</p>
+                            </details>
+                            <details class="bg-white p-6 rounded-2xl shadow-sm group">
+                                <summary
+                                    class="flex cursor-pointer items-center justify-between text-lg font-medium text-text-primary">
+                                    What type of entrepreneurs benefit the most?
+                                    <svg class="w-6 h-6 transform transition-transform group-open:rotate-180"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"></path>
+                                    </svg>
+                                </summary>
+                                <p class="mt-4 text-text-secondary">Designers, artists, writers, consultants,
+                                    freelancers, and any creative professional looking to optimize their performance and
+                                    well-being.</p>
+                            </details>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-20 text-center">
+                    <div class="max-w-2xl mx-auto">
+                        <h2 class="text-3xl font-bold tracking-tight text-text-primary mb-4">Ready to Take the First
+                            Step?</h2>
+                        <p class="text-lg text-text-secondary mb-8">Schedule a free introductory session and discover
+                            how ZenFlow can transform your vision.</p>
+                        <form class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="sr-only" for="name">Name</label>
+                                    <input
+                                        class="form-input w-full rounded-lg border-gray-300 bg-gray-50 focus:border-[#47eab4] focus:ring-[#47eab4] p-4 text-base"
+                                        id="name" placeholder="Your Name" type="text" />
+                                </div>
+                                <div>
+                                    <label class="sr-only" for="email">Email</label>
+                                    <input
+                                        class="form-input w-full rounded-lg border-gray-300 bg-gray-50 focus:border-[#47eab4] focus:ring-[#47eab4] p-4 text-base"
+                                        id="email" placeholder="Your Email" type="email" />
+                                </div>
+                            </div>
+                            <div>
+                                <label class="sr-only" for="message">Message</label>
+                                <textarea
+                                    class="form-textarea w-full rounded-lg border-gray-300 bg-gray-50 focus:border-[#47eab4] focus:ring-[#47eab4] p-4 text-base"
+                                    id="message" placeholder="Your Message" rows="4"></textarea>
+                            </div>
+                            <button
+                                class="w-full md:w-auto flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-[#47eab4] text-text-primary text-base font-bold shadow-md hover:bg-opacity-90 transition-colors mx-auto"
+                                type="submit">
+                                <span class="truncate">Send Inquiry</span>
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer class="bg-[var(--warm-gray)] py-8">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-text-secondary">
+                    <div class="flex justify-center gap-6 mb-4">
+                        <a class="text-gray-400 hover:text-[#47eab4] transition-colors" href="#">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 256 256">
+                                <path
+                                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-gray-400 hover:text-[#47eab4] transition-colors" href="#">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 256 256">
+                                <path
+                                    d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>© 2025 ZenFlow Coaching. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
     </div>
 
-    <script src="script.js"></script>
 </body>
+
 </html>
