@@ -13,15 +13,15 @@ export default function Home() {
       >
         <div className="flex flex-col gap-4 max-w-3xl">
           <h1 className="text-white text-4xl md:text-6xl font-extrabold leading-tight tracking-tighter">
-            Unlock Your Creative and Entrepreneurial Potential
+            Desbloquea Tu Potencial Creativo y Emprendedor
           </h1>
           <p className="text-white text-lg md:text-xl font-light">
-            Find the clarity, focus, and motivation to turn your brilliant ideas
-            into successful projects.
+            Encuentra la claridad, el enfoque y la motivación para convertir
+            tus ideas brillantes en proyectos exitosos.
           </p>
         </div>
         <button className="mt-8 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[#47eab4] text-text-primary text-base font-bold shadow-md hover:bg-opacity-90 transition-colors">
-          <span className="truncate">Start Your Transformation Now</span>
+          <span className="truncate">Comienza tu Transformación Ahora</span>
         </button>
       </section>
       <section className="grid md:grid-cols-2 gap-16 items-center py-20">
