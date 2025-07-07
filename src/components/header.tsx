@@ -24,7 +24,7 @@ const Header = () => {
         <h2 className="text-xl font-bold tracking-tight">ZenFlow Coaching</h2>
       </div>
       <button className="hidden md:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[#47eab4] text-text-primary text-sm font-bold shadow-sm hover:bg-opacity-90 transition-colors">
-        <span className="truncate">Schedule Your Free Session</span>
+        <span className="truncate">Agenda tu Sesión Gratuita</span>
       </button>
     </header>
   );

@@ -22,7 +22,7 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <p>© 2025 ZenFlow Coaching. All rights reserved.</p>
+        <p>© 2025 ZenFlow Coaching. Todos los derechos reservados.</p>
       </div>
     </footer>
   );

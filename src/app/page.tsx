@@ -27,14 +27,15 @@ export default function Home() {
       <section className="grid md:grid-cols-2 gap-16 items-center py-20">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-text-primary mb-4">
-            Your Guide to Creative Mastery
+            Tu Guía hacia la Maestría Creativa
           </h2>
           <p className="text-text-secondary text-lg leading-relaxed">
-            At ZenFlow Coaching, we understand the unique challenges of
-            entrepreneurs and creatives. We offer personalized tools and
-            strategies to overcome blocks, optimize your workflow, and cultivate
-            an unstoppable mindset. My mission is to help you channel your
-            creative energy into tangible and sustainable results.
+            En ZenFlow Coaching, entendemos los desafíos únicos de los
+            emprendedores y creativos. Ofrecemos herramientas y estrategias
+            personalizadas para superar bloqueos, optimizar tu flujo de
+            trabajo y cultivar una mentalidad imparable. Mi misión es ayudarte
+            a canalizar tu energía creativa en resultados tangibles y
+            sostenibles.
           </p>
         </div>
         <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg">
@@ -51,7 +52,7 @@ export default function Home() {
       <section className="py-20 bg-[var(--mint-green)] -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight text-text-primary text-center mb-12">
-            Services Designed to Boost Your Project
+            Servicios Diseñados para Impulsar Tu Proyecto
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center">
@@ -67,11 +68,11 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-text-primary mb-2">
-                Strategic Clarity
+                Claridad Estratégica
               </h3>
               <p className="text-text-secondary">
-                Individual sessions to define your goals, identify obstacles,
-                and outline a clear and concise action plan.
+                Sesiones individuales para definir tus metas, identificar
+                obstáculos y trazar un plan de acción claro y conciso.
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center">
@@ -87,11 +88,12 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-text-primary mb-2">
-                Creative Productivity
+                Productividad Creativa
               </h3>
               <p className="text-text-secondary">
-                Learn techniques to manage your time, avoid distractions, and
-                maintain a constant flow of inspiration and execution.
+                Aprende técnicas para gestionar tu tiempo, evitar
+                distracciones y mantener un flujo constante de inspiración y
+                ejecución.
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center">
@@ -107,11 +109,11 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-text-primary mb-2">
-                Unstoppable Mindset
+                Mentalidad Imparable
               </h3>
               <p className="text-text-secondary">
-                Develop resilience, overcome the fear of failure, and cultivate
-                solid self-confidence to face any challenge.
+                Desarrolla la resiliencia, supera el miedo al fracaso y cultiva
+                una autoconfianza sólida para enfrentar cualquier desafío.
               </p>
             </div>
           </div>
@@ -119,7 +121,7 @@ export default function Home() {
       </section>
       <section className="py-20">
         <h2 className="text-3xl font-bold tracking-tight text-text-primary text-center mb-12">
-          What Our Clients Have Achieved
+          Lo que Nuestros Clientes Han Logrado
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div
@@ -132,11 +134,11 @@ export default function Home() {
           >
             <blockquote className="text-white">
               <p className="text-2xl font-bold mb-2">
-                "Thanks to ZenFlow, I finally launched my podcast. Their focus on
-                creative productivity changed the way I work."
+                "Gracias a ZenFlow, finalmente lancé mi podcast. Su enfoque en la
+                productividad creativa cambió mi forma de trabajar."
               </p>
               <footer className="text-base font-medium opacity-90">
-                Laura P., Graphic Designer
+                Laura P., Diseñadora Gráfica
               </footer>
             </blockquote>
           </div>
@@ -150,11 +152,11 @@ export default function Home() {
           >
             <blockquote className="text-white">
               <p className="text-2xl font-bold mb-2">
-                "I overcame my writer's block and now have a constant flow of
-                ideas. Highly recommended for any creative!"
+                "Superé mi bloqueo de escritor y ahora tengo un flujo constante
+                de ideas. ¡Altamente recomendado para cualquier creativo!"
               </p>
               <footer className="text-base font-medium opacity-90">
-                Martín S., Writer and Entrepreneur
+                Martín S., Escritor y Emprendedor
               </footer>
             </blockquote>
           </div>
@@ -163,12 +165,12 @@ export default function Home() {
       <section className="py-20 bg-[var(--pale-sky-blue)] -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight text-text-primary text-center mb-12">
-            Frequently Asked Questions
+            Preguntas Frecuentes
           </h2>
           <div className="space-y-4">
             <details className="bg-white p-6 rounded-2xl shadow-sm group" open>
               <summary className="flex cursor-pointer items-center justify-between text-lg font-medium text-text-primary">
-                How does a coaching session work?
+                ¿Cómo funciona una sesión de coaching?
                 <svg
                   className="w-6 h-6 transform transition-transform group-open:rotate-180"
                   fill="none"
@@ -185,13 +187,14 @@ export default function Home() {
                 </svg>
               </summary>
               <p className="mt-4 text-text-secondary">
-                Our sessions are virtual, lasting 60 minutes. They focus on
-                your specific goals and creating actionable strategies.
+                Nuestras sesiones son virtuales, de 60 minutos. Se centran en
+                tus objetivos específicos y en la creación de estrategias
+                accionables.
               </p>
             </details>
             <details className="bg-white p-6 rounded-2xl shadow-sm group">
               <summary className="flex cursor-pointer items-center justify-between text-lg font-medium text-text-primary">
-                What type of entrepreneurs benefit the most?
+                ¿Qué tipo de emprendedores se benefician más?
                 <svg
                   className="w-6 h-6 transform transition-transform group-open:rotate-180"
                   fill="none"
@@ -208,9 +211,9 @@ export default function Home() {
                 </svg>
               </summary>
               <p className="mt-4 text-text-secondary">
-                Designers, artists, writers, consultants, freelancers, and any
-                creative professional looking to optimize their performance
-                and well-being.
+                Diseñadores, artistas, escritores, consultores, freelancers y
+                cualquier profesional creativo que busque optimizar su
+                rendimiento y bienestar.
               </p>
             </details>
           </div>
@@ -219,22 +222,22 @@ export default function Home() {
       <section className="py-20 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight text-text-primary mb-4">
-            Ready to Take the First Step?
+            ¿Listo para Dar el Primer Paso?
           </h2>
           <p className="text-lg text-text-secondary mb-8">
-            Schedule a free introductory session and discover how ZenFlow can
-            transform your vision.
+            Agenda una sesión introductoria gratuita y descubre cómo ZenFlow
+            puede transformar tu visión.
           </p>
           <form className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
                 <label className="sr-only" htmlFor="name">
-                  Name
+                  Nombre
                 </label>
                 <input
                   className="form-input w-full rounded-lg border-gray-300 bg-gray-50 focus:border-[#47eab4] focus:ring-[#47eab4] p-4 text-base"
                   id="name"
-                  placeholder="Your Name"
+                  placeholder="Tu Nombre"
                   type="text"
                 />
               </div>
@@ -245,19 +248,19 @@ export default function Home() {
                 <input
                   className="form-input w-full rounded-lg border-gray-300 bg-gray-50 focus:border-[#47eab4] focus:ring-[#47eab4] p-4 text-base"
                   id="email"
-                  placeholder="Your Email"
+                  placeholder="Tu Correo Electrónico"
                   type="email"
                 />
               </div>
             </div>
             <div>
               <label className="sr-only" htmlFor="message">
-                Message
+                Mensaje
               </label>
               <textarea
                 className="form-textarea w-full rounded-lg border-gray-300 bg-gray-50 focus:border-[#47eab4] focus:ring-[#47eab4] p-4 text-base"
                 id="message"
-                placeholder="Your Message"
+                placeholder="Tu Mensaje"
                 rows={4}
               ></textarea>
             </div>
@@ -265,7 +268,7 @@ export default function Home() {
               className="w-full md:w-auto flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-[#47eab4] text-text-primary text-base font-bold shadow-md hover:bg-opacity-90 transition-colors mx-auto"
               type="submit"
             >
-              <span className="truncate">Send Inquiry</span>
+              <span className="truncate">Enviar Consulta</span>
             </button>
           </form>
         </div>
